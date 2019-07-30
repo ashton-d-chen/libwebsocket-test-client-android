@@ -16,7 +16,16 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                cppFlags "-std=c++14"
+                cppFlags "-std=c++11"
+                arguments "-DLWS_WITHOUT_DAEMONIZE=ON",
+                        "-DLWS_WITHOUT_TESTAPPS=ON",
+                        "-DLWS_IPV6=OFF",
+                        "-DLWS_WITH_BUNDLED_ZLIB=OFF",
+                        "-DLWS_WITH_SSL=ON",
+                        "-DLWS_WITH_HTTP2=ON",
+                        "-DLWS_OPENSSL_INCLUDE_DIRS=app/src/main/cpp/lib/openssl/x86/include",
+                        "-DLWS_OPENSSL_LIBRARIES=app/src/main/cpp/lib/openssl/x86/lib/libssl.a;app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a",
+                        "-v"
             }
         }
     }
