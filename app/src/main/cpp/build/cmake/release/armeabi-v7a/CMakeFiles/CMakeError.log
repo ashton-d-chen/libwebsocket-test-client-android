@@ -1,0 +1,297 @@
+Determining if the function execvpe exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_5bc74"
+[1/2] Building C object CMakeFiles/cmTC_5bc74.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_5bc74
+FAILED: cmTC_5bc74 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=execvpe  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_5bc74.dir/CheckFunctionExists.c.o  -o cmTC_5bc74  -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'execvpe'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function getifaddrs exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_2ef93"
+[1/2] Building C object CMakeFiles/cmTC_2ef93.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2ef93
+FAILED: cmTC_2ef93 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=getifaddrs  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_2ef93.dir/CheckFunctionExists.c.o  -o cmTC_2ef93  -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'getifaddrs'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function _snprintf exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_4c488"
+[1/2] Building C object CMakeFiles/cmTC_4c488.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4c488
+FAILED: cmTC_4c488 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=_snprintf  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_4c488.dir/CheckFunctionExists.c.o  -o cmTC_4c488  -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to '_snprintf'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function _vsnprintf exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_cfe8e"
+[1/2] Building C object CMakeFiles/cmTC_cfe8e.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_cfe8e
+FAILED: cmTC_cfe8e 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=_vsnprintf  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_cfe8e.dir/CheckFunctionExists.c.o  -o cmTC_cfe8e  -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to '_vsnprintf'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function getloadavg exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_704b8"
+[1/2] Building C object CMakeFiles/cmTC_704b8.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_704b8
+FAILED: cmTC_704b8 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=getloadavg  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_704b8.dir/CheckFunctionExists.c.o  -o cmTC_704b8  -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'getloadavg'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function _atoi64 exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_44c5a"
+[1/2] Building C object CMakeFiles/cmTC_44c5a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_44c5a
+FAILED: cmTC_44c5a 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=_atoi64  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_44c5a.dir/CheckFunctionExists.c.o  -o cmTC_44c5a  -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to '_atoi64'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function _stat32i64 exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_2c7ce"
+[1/2] Building C object CMakeFiles/cmTC_2c7ce.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2c7ce
+FAILED: cmTC_2c7ce 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=_stat32i64  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_2c7ce.dir/CheckFunctionExists.c.o  -o cmTC_2c7ce  -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to '_stat32i64'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the include file in6addr.h exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_d0cb6"
+[1/2] Building C object CMakeFiles/cmTC_d0cb6.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_d0cb6.dir/CheckIncludeFile.c.o 
+C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DKEYWORD=__inline  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE -o CMakeFiles/cmTC_d0cb6.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: 'in6addr.h' file not found
+#include <in6addr.h>
+         ^~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Determining if the include file sys/sockio.h exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_e8250"
+[1/2] Building C object CMakeFiles/cmTC_e8250.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_e8250.dir/CheckIncludeFile.c.o 
+C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DKEYWORD=__inline  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE -o CMakeFiles/cmTC_e8250.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: 'sys/sockio.h' file not found
+#include <sys/sockio.h>
+         ^~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Determining if the include file vfork.h exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_6bfac"
+[1/2] Building C object CMakeFiles/cmTC_6bfac.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_6bfac.dir/CheckIncludeFile.c.o 
+C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DKEYWORD=__inline  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE -o CMakeFiles/cmTC_6bfac.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: 'vfork.h' file not found
+#include <vfork.h>
+         ^~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function cap_set_flag exists in the cap failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_0845c"
+[1/2] Building C object CMakeFiles/cmTC_0845c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_0845c
+FAILED: cmTC_0845c 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=cap_set_flag  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_0845c.dir/CheckFunctionExists.c.o  -o cmTC_0845c  -lcap -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: cannot find -lcap
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'cap_set_flag'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function SSL_CTX_set1_param exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_1c38a"
+[1/2] Building C object CMakeFiles/cmTC_1c38a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1c38a
+FAILED: cmTC_1c38a 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=SSL_CTX_set1_param -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_1c38a.dir/CheckFunctionExists.c.o  -o cmTC_1c38a  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a(ssl_lib.o): incompatible target
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'SSL_CTX_set1_param'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function SSL_set_info_callback exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_75887"
+[1/2] Building C object CMakeFiles/cmTC_75887.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_75887
+FAILED: cmTC_75887 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=SSL_set_info_callback -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_75887.dir/CheckFunctionExists.c.o  -o cmTC_75887  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a(ssl_lib.o): incompatible target
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'SSL_set_info_callback'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function X509_VERIFY_PARAM_set1_host exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_0f033"
+[1/2] Building C object CMakeFiles/cmTC_0f033.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_0f033
+FAILED: cmTC_0f033 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=X509_VERIFY_PARAM_set1_host -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_0f033.dir/CheckFunctionExists.c.o  -o cmTC_0f033  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a(x509_vpm.o): incompatible target
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'X509_VERIFY_PARAM_set1_host'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function RSA_set0_key exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_7fb63"
+[1/2] Building C object CMakeFiles/cmTC_7fb63.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7fb63
+FAILED: cmTC_7fb63 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=RSA_set0_key -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_7fb63.dir/CheckFunctionExists.c.o  -o cmTC_7fb63  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'RSA_set0_key'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function X509_get_key_usage exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_e3c79"
+[1/2] Building C object CMakeFiles/cmTC_e3c79.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e3c79
+FAILED: cmTC_e3c79 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=X509_get_key_usage -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_e3c79.dir/CheckFunctionExists.c.o  -o cmTC_e3c79  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'X509_get_key_usage'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function SSL_CTX_get0_certificate exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_1cad3"
+[1/2] Building C object CMakeFiles/cmTC_1cad3.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1cad3
+FAILED: cmTC_1cad3 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=SSL_CTX_get0_certificate -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_1cad3.dir/CheckFunctionExists.c.o  -o cmTC_1cad3  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a(ssl_lib.o): incompatible target
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'SSL_CTX_get0_certificate'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function SSL_get0_alpn_selected exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_b1674"
+[1/2] Building C object CMakeFiles/cmTC_b1674.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b1674
+FAILED: cmTC_b1674 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=SSL_get0_alpn_selected -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_b1674.dir/CheckFunctionExists.c.o  -o cmTC_b1674  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a(ssl_lib.o): incompatible target
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'SSL_get0_alpn_selected'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function SSL_set_alpn_protos exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c7610"
+[1/2] Building C object CMakeFiles/cmTC_c7610.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c7610
+FAILED: cmTC_c7610 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=SSL_set_alpn_protos -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_c7610.dir/CheckFunctionExists.c.o  -o cmTC_c7610  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a(ssl_lib.o): incompatible target
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'SSL_set_alpn_protos'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function SSL_CTX_set_ciphersuites exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_27226"
+[1/2] Building C object CMakeFiles/cmTC_27226.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_27226
+FAILED: cmTC_27226 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=SSL_CTX_set_ciphersuites -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_27226.dir/CheckFunctionExists.c.o  -o cmTC_27226  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'SSL_CTX_set_ciphersuites'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function TLS_client_method exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_517ee"
+[1/2] Building C object CMakeFiles/cmTC_517ee.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_517ee
+FAILED: cmTC_517ee 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=TLS_client_method -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_517ee.dir/CheckFunctionExists.c.o  -o cmTC_517ee  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'TLS_client_method'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Determining if the function TLSv1_2_client_method exists failed with the following output:
+Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_e28c4"
+[1/2] Building C object CMakeFiles/cmTC_e28c4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e28c4
+FAILED: cmTC_e28c4 
+cmd.exe /C "cd . && C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef  -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-deprecated-declarations -pthread -DCHECK_FUNCTION_EXISTS=TLSv1_2_client_method -pthread  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections CMakeFiles/cmTC_e28c4.dir/CheckFunctionExists.c.o  -o cmTC_e28c4  C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a -lm -latomic -lm && cd ."
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a(t1_clnt.o): incompatible target
+C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:17: error: undefined reference to 'TLSv1_2_client_method'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+

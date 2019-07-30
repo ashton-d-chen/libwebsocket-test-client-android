@@ -16,9 +16,10 @@ cmake_minimum_required(VERSION 3.4.1)
 #set(LWS_OPENSSL_LIBRARIES "openssl/x86/lib/libssl.a" "openssl/x86/lib/libcrypto.a")
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib/libwebsockets)
-#include_directories (${CMAKE_CURRENT_SOURCE_DIR}/libwebsockets/include)
-#include_directories (${CMAKE_CURRENT_SOURCE_DIR}/libwebsockets/lib)
-#add_library (libwebsockets SHARED IMPORTED)
+include_directories (${CMAKE_CURRENT_SOURCE_DIR}/lib/libwebsockets/include)
+include_directories (${CMAKE_CURRENT_SOURCE_DIR}/build/cmake/debug/x86/lib/libwebsockets)
+include_directories (${CMAKE_CURRENT_SOURCE_DIR}/lib/openssl/x86/include)
+add_library (libwebsockets SHARED IMPORTED)
 
 #file(GLOB_RECURSE SOURCE "libwebsockets/*.c")
 
@@ -54,7 +55,6 @@ find_library( # Sets the name of the path variable.
 
 target_link_libraries( # Specifies the target library.
                         native-lib
-#                        libwebsockets
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )

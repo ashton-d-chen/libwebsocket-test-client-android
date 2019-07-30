@@ -1,0 +1,618 @@
+{
+  "stringTable": {
+    "0": "C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/outputs/cmake/cmake/release/x86",
+    "1": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_lib_EXPORTS -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/libwebsockets/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -O2 -DNDEBUG -fPIC",
+    "2": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/libwebsockets/include -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/libwebsockets/plugins -Ilib/libwebsockets -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/libwebsockets/lib -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/include -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -Wno-deprecated-declarations -pthread -O2 -DNDEBUG -fPIC",
+    "3": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwebsockets_shared_EXPORTS -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/libwebsockets/include -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/libwebsockets/plugins -Ilib/libwebsockets -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/libwebsockets/lib -IC:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/include -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -Wno-deprecated-declarations -pthread -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\FindGit.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\lws_config_private.h.in",
+    "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\CMakeLists.txt",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\LibwebsocketsConfigVersion.cmake.in",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\LibwebsocketsConfig.cmake.in",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\UseRPMTools.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\FindOpenSSLbins.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\lws_config.h.in"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\outputs\\cmake\\cmake\\release\\x86\" --target clean"
+  ],
+  "libraries": {
+    "websockets_shared-Release-x86": {
+      "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\outputs\\cmake\\cmake\\release\\x86\" --target websockets_shared",
+      "buildType": "release",
+      "toolchain": "2677279232",
+      "abi": "x86",
+      "artifactName": "websockets_shared",
+      "files": [
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\alloc.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\context.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\dummy-callback.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\libwebsockets.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\output.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\pollfd.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\service.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\base64-decode.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\lws-ring.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\pipe\\ops-pipe.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\header.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\server\\parsers.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\h1\\ops-h1.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\ws\\ops-ws.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\ws\\client-ws.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\ws\\client-parser-ws.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\ws\\server-ws.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\raw-skt\\ops-raw-skt.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\raw-file\\ops-raw-file.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\lwsac\\lwsac.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\lwsac\\cached-file.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\connect.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\client\\client.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\client\\client-handshake.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\adopt.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\listen\\ops-listen.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\tls.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\openssl\\ssl.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\tls-server.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\openssl\\openssl-server.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\tls-client.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\openssl\\openssl-client.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\sha-1.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\h2\\http2.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\h2\\hpack.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\h2\\ops-h2.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-caps.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-fds.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-file.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-misc.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-init.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-pipe.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-service.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-sockets.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\server\\server.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\server\\lws-spa.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\event-libs\\poll\\poll.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\lejp.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\server\\lejp-conf.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\getifaddrs.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\private.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\getifaddrs.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\include\\libwebsockets.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\outputs\\cmake\\cmake\\release\\x86\\lib\\libwebsockets\\lws_config.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\plugins\\ssh-base\\include\\lws-plugin-ssh.h",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\outputs\\cmake\\cmake\\release\\x86\\lib\\libwebsockets\\lib\\libwebsockets.so"
+    },
+    "native-lib-Release-x86": {
+      "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\outputs\\cmake\\cmake\\release\\x86\" --target native-lib",
+      "buildType": "release",
+      "toolchain": "2677279232",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "files": [
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\native-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\build\\intermediates\\cmake\\release\\obj\\x86\\libnative-lib.so"
+    },
+    "websockets-Release-x86": {
+      "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\outputs\\cmake\\cmake\\release\\x86\" --target websockets",
+      "buildType": "release",
+      "toolchain": "2677279232",
+      "abi": "x86",
+      "artifactName": "websockets",
+      "files": [
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\alloc.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\context.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\dummy-callback.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\libwebsockets.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\output.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\pollfd.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\service.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\base64-decode.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\lws-ring.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\pipe\\ops-pipe.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\header.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\server\\parsers.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\h1\\ops-h1.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\ws\\ops-ws.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\ws\\client-ws.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\ws\\client-parser-ws.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\ws\\server-ws.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\raw-skt\\ops-raw-skt.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\raw-file\\ops-raw-file.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\lwsac\\lwsac.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\lwsac\\cached-file.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\connect.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\client\\client.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\client\\client-handshake.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\adopt.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\listen\\ops-listen.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\tls.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\openssl\\ssl.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\tls-server.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\openssl\\openssl-server.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\tls-client.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\tls\\openssl\\openssl-client.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\sha-1.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\h2\\http2.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\h2\\hpack.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\h2\\ops-h2.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-caps.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-fds.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-file.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-misc.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-init.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-pipe.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-service.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\plat\\unix\\unix-sockets.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\server\\server.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\server\\lws-spa.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\event-libs\\poll\\poll.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\lejp.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\roles\\http\\server\\lejp-conf.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\getifaddrs.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\core\\private.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\lib\\misc\\getifaddrs.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\include\\libwebsockets.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\outputs\\cmake\\cmake\\release\\x86\\lib\\libwebsockets\\lws_config.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\plugins\\ssh-base\\include\\lws-plugin-ssh.h",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\outputs\\cmake\\cmake\\release\\x86\\lib\\libwebsockets\\lib\\libwebsockets.a"
+    }
+  },
+  "toolchains": {
+    "2677279232": {
+      "cCompilerExecutable": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

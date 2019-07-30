@@ -1,0 +1,71 @@
+CMAKE_TOOLCHAIN_FILE='C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\ndk-bundle\build\cmake\android.toolchain.cmake'
+Git commit hash: 
+Compiling with SSL support
+OpenSSL include dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/include
+OpenSSL libraries: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a;C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a
+Searching for OpenSSL executable and dlls
+OpenSSL executable: OPENSSL_EXECUTABLE-NOTFOUND
+ GENCERTS = 0
+Looking for RPMTools... - rpmbuild NOT FOUND
+---------------------------------------------------------------------
+  Settings:  (For more help do cmake -LH <srcpath>)
+---------------------------------------------------------------------
+ LWS_WITH_STATIC = ON
+ LWS_WITH_SHARED = ON
+ LWS_WITH_SSL = ON (SSL Support)
+ LWS_SSL_CLIENT_USE_OS_CA_CERTS = 1
+ LWS_WITH_WOLFSSL = OFF (wolfSSL/CyaSSL replacement for OpenSSL)
+ LWS_WITH_MBEDTLS = OFF (mbedTLS replacement for OpenSSL)
+ LWS_WITHOUT_BUILTIN_SHA1 = OFF
+ LWS_WITHOUT_BUILTIN_GETIFADDRS = OFF
+ LWS_WITHOUT_CLIENT = OFF
+ LWS_WITHOUT_SERVER = OFF
+ LWS_LINK_TESTAPPS_DYNAMIC = OFF
+ LWS_WITHOUT_TESTAPPS = ON
+ LWS_WITHOUT_TEST_SERVER = OFF
+ LWS_WITHOUT_TEST_SERVER_EXTPOLL = OFF
+ LWS_WITHOUT_TEST_PING = OFF
+ LWS_WITHOUT_TEST_CLIENT = OFF
+ LWS_WITHOUT_EXTENSIONS = ON
+ LWS_WITH_LATENCY = OFF
+ LWS_WITHOUT_DAEMONIZE = ON
+ LWS_WITH_LIBEV = OFF
+ LWS_WITH_LIBUV = OFF
+ LWS_WITH_LIBEVENT = OFF
+ LWS_IPV6 = OFF
+ LWS_UNIX_SOCK = OFF
+ LWS_WITH_HTTP2 = 1
+ LWS_SSL_SERVER_WITH_ECDH_CERT = OFF
+ LWS_MAX_SMP = 1
+ LWS_HAVE_PTHREAD_H = 1
+ LWS_WITH_CGI = OFF
+ LWS_HAVE_OPENSSL_ECDH_H = 1
+ LWS_HAVE_SSL_CTX_set1_param = 1
+ LWS_HAVE_RSA_SET0_KEY = 
+ LWS_WITH_HTTP_PROXY = OFF
+ LIBHUBBUB_LIBRARIES = 
+ PLUGINS = 
+ LWS_WITH_ACCESS_LOG = OFF
+ LWS_WITH_SERVER_STATUS = OFF
+ LWS_WITH_LEJP = ON
+ LWS_WITH_LEJP_CONF = ON
+ LWS_WITH_SMTP = OFF
+ LWS_WITH_GENERIC_SESSIONS = OFF
+ LWS_STATIC_PIC = OFF
+ LWS_WITH_RANGES = OFF
+ LWS_PLAT_OPTEE = OFF
+ LWS_WITH_ESP32 = OFF
+ LWS_WITH_ZIP_FOPS = OFF
+ LWS_AVOID_SIGPIPE_IGN = OFF
+ LWS_WITH_STATS = OFF
+ LWS_WITH_SOCKS5 = OFF
+ LWS_HAVE_SYS_CAPABILITY_H = 1
+ LWS_HAVE_LIBCAP = 
+ LWS_WITH_PEER_LIMITS = OFF
+ LWS_HAVE_ATOLL = 1
+ LWS_HAVE__ATOI64 = 
+ LWS_HAVE_STAT32I64 = 
+ LWS_HAS_INTPTR_T = 1
+ LWS_WITH_EXPORT_LWSTARGETS = ON
+---------------------------------------------------------------------
+Configuring done

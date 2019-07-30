@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\FindGit.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\lws_config_private.h.in",
+    "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\CMakeLists.txt",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\LibwebsocketsConfigVersion.cmake.in",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\LibwebsocketsConfig.cmake.in",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\UseRPMTools.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\FindOpenSSLbins.cmake",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\lib\\libwebsockets\\cmake\\lws_config.h.in"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\x86_64\" --target clean"
+  ],
+  "libraries": {
+    "websockets-Release-x86_64": {
+      "artifactName": "websockets",
+      "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\x86_64\" --target websockets",
+      "abi": "x86_64",
+      "output": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\x86_64\\lib\\libwebsockets\\lib\\libwebsockets.a"
+    },
+    "websockets_shared-Release-x86_64": {
+      "artifactName": "websockets_shared",
+      "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\x86_64\" --target websockets_shared",
+      "abi": "x86_64",
+      "output": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\x86_64\\lib\\libwebsockets\\lib\\libwebsockets.so"
+    },
+    "native-lib-Release-x86_64": {
+      "artifactName": "native-lib",
+      "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\x86_64\" --target native-lib",
+      "abi": "x86_64",
+      "output": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\build\\intermediates\\cmake\\release\\obj\\x86_64\\libnative-lib.so"
+    }
+  }
+}

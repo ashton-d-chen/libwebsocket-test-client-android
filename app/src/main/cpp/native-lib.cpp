@@ -1,5 +1,6 @@
 #include <jni.h>
 #include <string>
+#include <libwebsockets.h>
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_example_androidndkeample_MainActivity_stringFromJNI(
