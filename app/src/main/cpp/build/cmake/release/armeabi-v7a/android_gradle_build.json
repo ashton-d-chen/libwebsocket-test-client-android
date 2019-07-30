@@ -1,7 +1,7 @@
 {
   "stringTable": {
     "0": "C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/armeabi-v7a",
-    "1": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_lib_EXPORTS -I../../../../lib/libwebsockets/include -I../../debug/x86/lib/libwebsockets -I../../../../lib/openssl/x86/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -Oz -DNDEBUG -fPIC",
+    "1": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_lib_EXPORTS -I../../../../lib/libwebsockets/include -I../../debug/x86/lib/libwebsockets -I../../../../lib/openssl/x86/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC",
     "2": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -I../../../../lib/libwebsockets/include -I../../../../lib/libwebsockets/plugins -Ilib/libwebsockets -I../../../../lib/libwebsockets/lib -I../../../../lib/openssl/x86/include -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -Wno-deprecated-declarations -pthread -Oz -DNDEBUG -fPIC",
     "3": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwebsockets_shared_EXPORTS -I../../../../lib/libwebsockets/include -I../../../../lib/libwebsockets/plugins -Ilib/libwebsockets -I../../../../lib/libwebsockets/lib -I../../../../lib/openssl/x86/include -Wall -Wsign-compare -Wuninitialized -Werror -fvisibility=hidden -Wundef -Wtype-limits -Wignored-qualifiers -O3 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -Wno-deprecated-declarations -pthread -Oz -DNDEBUG -fPIC"
   },
@@ -25,7 +25,7 @@
     "websockets_shared-Release-armeabi-v7a": {
       "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\armeabi-v7a\" --target websockets_shared",
       "buildType": "release",
-      "toolchain": "2677279232",
+      "toolchain": "2981394286",
       "abi": "armeabi-v7a",
       "artifactName": "websockets_shared",
       "files": [
@@ -307,7 +307,7 @@
     "websockets-Release-armeabi-v7a": {
       "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\armeabi-v7a\" --target websockets",
       "buildType": "release",
-      "toolchain": "2677279232",
+      "toolchain": "2981394286",
       "abi": "armeabi-v7a",
       "artifactName": "websockets",
       "files": [
@@ -589,12 +589,12 @@
     "native-lib-Release-armeabi-v7a": {
       "buildCommand": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build \"C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\build\\cmake\\release\\armeabi-v7a\" --target native-lib",
       "buildType": "release",
-      "toolchain": "2677279232",
+      "toolchain": "2981394286",
       "abi": "armeabi-v7a",
       "artifactName": "native-lib",
       "files": [
         {
-          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\native-lib.cpp",
+          "src": "C:\\Users\\ashton.SKYSECURE\\Projects\\AndroidNDKEample\\app\\src\\main\\cpp\\native-lib.c",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
@@ -604,15 +604,12 @@
     }
   },
   "toolchains": {
-    "2677279232": {
-      "cCompilerExecutable": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
-      "cppCompilerExecutable": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    "2981394286": {
+      "cCompilerExecutable": "C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
     }
   },
   "cFileExtensions": [
     "c"
   ],
-  "cppFileExtensions": [
-    "cpp"
-  ]
+  "cppFileExtensions": []
 }

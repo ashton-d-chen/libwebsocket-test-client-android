@@ -3,17 +3,17 @@ The host system is: Windows - 10.0.17763 - AMD64
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_95d44"
-[1/2] Building C object CMakeFiles/cmTC_95d44.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_95d44
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_89f14"
+[1/2] Building C object CMakeFiles/cmTC_89f14.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_89f14
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_1c2e5"
-[1/2] Building C object CMakeFiles/cmTC_1c2e5.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_1c2e5
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_6808e"
+[1/2] Building C object CMakeFiles/cmTC_6808e.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_6808e
 Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
 Target: i686-none-linux-android16
 Thread model: posix
@@ -23,16 +23,16 @@ Found candidate GCC installation: C:/Users/ashton.SKYSECURE/AppData/Local/Androi
 Selected GCC installation: C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x
 Candidate multilib: .;@m32
 Selected multilib: .;@m32
- "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_1c2e5 "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o" "-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_1c2e5.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtend_android.o"
+ "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_6808e "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o" "-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_6808e.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtend_android.o"
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_1c2e5"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_1c2e5.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_1c2e5]
+  ignore line: [Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_6808e"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_6808e.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_6808e]
   ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
   ignore line: [Target: i686-none-linux-android16]
   ignore line: [Thread model: posix]
@@ -44,7 +44,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m32]
-  link line: [ "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_1c2e5 "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o" "-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_1c2e5.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtend_android.o"]
+  link line: [ "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_6808e "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o" "-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_6808e.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtend_android.o"]
     arg [C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld] ==> ignore
     arg [--sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
@@ -58,7 +58,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1c2e5] ==> ignore
+    arg [cmTC_6808e] ==> ignore
     arg [C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o] ==> ignore
     arg [-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386] ==> dir [C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386]
     arg [-LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
@@ -76,7 +76,7 @@ Parsed C implicit link information from above output:
     arg [--no-undefined] ==> ignore
     arg [-znoexecstack] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_1c2e5.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_6808e.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
@@ -99,9 +99,9 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a0e60"
-[1/2] Building C object CMakeFiles/cmTC_a0e60.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_a0e60
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_d6398"
+[1/2] Building C object CMakeFiles/cmTC_d6398.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_d6398
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -113,9 +113,9 @@ Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.1
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_62c73"
-[1/2] Building C object CMakeFiles/cmTC_62c73.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_62c73
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_bd4d0"
+[1/2] Building C object CMakeFiles/cmTC_bd4d0.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_bd4d0
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -127,9 +127,9 @@ Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.1
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_6190a"
-[1/2] Building C object CMakeFiles/cmTC_6190a.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_6190a
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ea3e1"
+[1/2] Building C object CMakeFiles/cmTC_ea3e1.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_ea3e1
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -139,17 +139,17 @@ Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.1
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_8ccad"
-[1/2] Building CXX object CMakeFiles/cmTC_8ccad.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_8ccad
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_9661d"
+[1/2] Building CXX object CMakeFiles/cmTC_9661d.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_9661d
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_676d9"
-[1/2] Building CXX object CMakeFiles/cmTC_676d9.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_676d9
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_0489d"
+[1/2] Building CXX object CMakeFiles/cmTC_0489d.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_0489d
 Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
 Target: i686-none-linux-android16
 Thread model: posix
@@ -159,16 +159,16 @@ Found candidate GCC installation: C:/Users/ashton.SKYSECURE/AppData/Local/Androi
 Selected GCC installation: C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x
 Candidate multilib: .;@m32
 Selected multilib: .;@m32
- "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_676d9 "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o" "-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_676d9.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtend_android.o"
+ "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_0489d "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o" "-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_0489d.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtend_android.o"
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_676d9"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_676d9.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_676d9]
+  ignore line: [Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_0489d"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_0489d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_0489d]
   ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
   ignore line: [Target: i686-none-linux-android16]
   ignore line: [Thread model: posix]
@@ -180,7 +180,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m32]
-  link line: [ "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_676d9 "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o" "-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_676d9.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtend_android.o"]
+  link line: [ "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_0489d "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o" "-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16 -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_0489d.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtend_android.o"]
     arg [C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld] ==> ignore
     arg [--sysroot=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
@@ -194,7 +194,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_676d9] ==> ignore
+    arg [cmTC_0489d] ==> ignore
     arg [C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/16\\crtbegin_dynamic.o] ==> ignore
     arg [-LC:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386] ==> dir [C:\\Users\\ashton.SKYSECURE\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386]
     arg [-LC:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
@@ -212,7 +212,7 @@ Parsed CXX implicit link information from above output:
     arg [--no-undefined] ==> ignore
     arg [-znoexecstack] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_676d9.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_0489d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-Bstatic] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-Bdynamic] ==> ignore
@@ -239,9 +239,9 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a2db1"
-[1/2] Building CXX object CMakeFiles/cmTC_a2db1.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_a2db1
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_84bb5"
+[1/2] Building CXX object CMakeFiles/cmTC_84bb5.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_84bb5
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -306,9 +306,9 @@ Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.1
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_d497d"
-[1/2] Building CXX object CMakeFiles/cmTC_d497d.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_d497d
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_98cf5"
+[1/2] Building CXX object CMakeFiles/cmTC_98cf5.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_98cf5
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -373,9 +373,9 @@ Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.1
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_4cab4"
-[1/2] Building CXX object CMakeFiles/cmTC_4cab4.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_4cab4
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_9f76e"
+[1/2] Building CXX object CMakeFiles/cmTC_9f76e.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_9f76e
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -440,9 +440,9 @@ Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.1
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_7989a"
-[1/2] Building CXX object CMakeFiles/cmTC_7989a.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_7989a
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_fb3fa"
+[1/2] Building CXX object CMakeFiles/cmTC_fb3fa.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_fb3fa
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -505,9 +505,9 @@ Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.1
 Performing C SOURCE FILE Test LWS_HAVE_inline succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_92413"
-[1/2] Building C object CMakeFiles/cmTC_92413.dir/src.c.o
-[2/2] Linking C executable cmTC_92413
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_61b2c"
+[1/2] Building C object CMakeFiles/cmTC_61b2c.dir/src.c.o
+[2/2] Linking C executable cmTC_61b2c
 
 Source file was:
 
@@ -518,9 +518,9 @@ Source file was:
 Performing C SOURCE FILE Test LWS_HAVE___inline__ succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_db406"
-[1/2] Building C object CMakeFiles/cmTC_db406.dir/src.c.o
-[2/2] Linking C executable cmTC_db406
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_70f14"
+[1/2] Building C object CMakeFiles/cmTC_70f14.dir/src.c.o
+[2/2] Linking C executable cmTC_70f14
 
 Source file was:
 
@@ -531,9 +531,9 @@ Source file was:
 Performing C SOURCE FILE Test LWS_HAVE___inline succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_04760"
-[1/2] Building C object CMakeFiles/cmTC_04760.dir/src.c.o
-[2/2] Linking C executable cmTC_04760
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c1673"
+[1/2] Building C object CMakeFiles/cmTC_c1673.dir/src.c.o
+[2/2] Linking C executable cmTC_c1673
 
 Source file was:
 
@@ -544,9 +544,9 @@ Source file was:
 Performing C SOURCE FILE Test LWS_HAVE_BZERO succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_79d35"
-[1/2] Building C object CMakeFiles/cmTC_79d35.dir/src.c.o
-[2/2] Linking C executable cmTC_79d35
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_113c3"
+[1/2] Building C object CMakeFiles/cmTC_113c3.dir/src.c.o
+[2/2] Linking C executable cmTC_113c3
 
 Source file was:
 #include <strings.h>
@@ -555,24 +555,24 @@ Source file was:
 Determining if the function fork exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_76a06"
-[1/2] Building C object CMakeFiles/cmTC_76a06.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_76a06
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_dd11a"
+[1/2] Building C object CMakeFiles/cmTC_dd11a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_dd11a
 
 
 Determining if the function getenv exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_cde62"
-[1/2] Building C object CMakeFiles/cmTC_cde62.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_cde62
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ea43f"
+[1/2] Building C object CMakeFiles/cmTC_ea43f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_ea43f
 
 
 Determining if the function malloc exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_42492"
-[1/2] Building C object CMakeFiles/cmTC_42492.dir/CheckFunctionExists.c.o
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_04749"
+[1/2] Building C object CMakeFiles/cmTC_04749.dir/CheckFunctionExists.c.o
 C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'malloc' [-Wincompatible-library-redeclaration]
   CHECK_FUNCTION_EXISTS(void);
   ^
@@ -584,14 +584,14 @@ C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/c
 #define CHECK_FUNCTION_EXISTS malloc
                               ^
 1 warning generated.
-[2/2] Linking C executable cmTC_42492
+[2/2] Linking C executable cmTC_04749
 
 
 Determining if the function memset exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_1c564"
-[1/2] Building C object CMakeFiles/cmTC_1c564.dir/CheckFunctionExists.c.o
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_87131"
+[1/2] Building C object CMakeFiles/cmTC_87131.dir/CheckFunctionExists.c.o
 C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'memset' [-Wincompatible-library-redeclaration]
   CHECK_FUNCTION_EXISTS(void);
   ^
@@ -603,14 +603,14 @@ C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/c
 #define CHECK_FUNCTION_EXISTS memset
                               ^
 1 warning generated.
-[2/2] Linking C executable cmTC_1c564
+[2/2] Linking C executable cmTC_87131
 
 
 Determining if the function realloc exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_542b6"
-[1/2] Building C object CMakeFiles/cmTC_542b6.dir/CheckFunctionExists.c.o
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_13b65"
+[1/2] Building C object CMakeFiles/cmTC_13b65.dir/CheckFunctionExists.c.o
 C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'realloc' [-Wincompatible-library-redeclaration]
   CHECK_FUNCTION_EXISTS(void);
   ^
@@ -622,22 +622,22 @@ C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/c
 #define CHECK_FUNCTION_EXISTS realloc
                               ^
 1 warning generated.
-[2/2] Linking C executable cmTC_542b6
+[2/2] Linking C executable cmTC_13b65
 
 
 Determining if the function socket exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_203ae"
-[1/2] Building C object CMakeFiles/cmTC_203ae.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_203ae
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_606a2"
+[1/2] Building C object CMakeFiles/cmTC_606a2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_606a2
 
 
 Determining if the function strerror exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_230f6"
-[1/2] Building C object CMakeFiles/cmTC_230f6.dir/CheckFunctionExists.c.o
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_5740b"
+[1/2] Building C object CMakeFiles/cmTC_5740b.dir/CheckFunctionExists.c.o
 C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strerror' [-Wincompatible-library-redeclaration]
   CHECK_FUNCTION_EXISTS(void);
   ^
@@ -649,14 +649,14 @@ C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/c
 #define CHECK_FUNCTION_EXISTS strerror
                               ^
 1 warning generated.
-[2/2] Linking C executable cmTC_230f6
+[2/2] Linking C executable cmTC_5740b
 
 
 Determining if the function vfork exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_e0e1b"
-[1/2] Building C object CMakeFiles/cmTC_e0e1b.dir/CheckFunctionExists.c.o
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_61b46"
+[1/2] Building C object CMakeFiles/cmTC_61b46.dir/CheckFunctionExists.c.o
 C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'vfork' [-Wincompatible-library-redeclaration]
   CHECK_FUNCTION_EXISTS(void);
   ^
@@ -668,14 +668,14 @@ C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/c
 #define CHECK_FUNCTION_EXISTS vfork
                               ^
 1 warning generated.
-[2/2] Linking C executable cmTC_e0e1b
+[2/2] Linking C executable cmTC_61b46
 
 
 Determining if the function snprintf exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_7b7ba"
-[1/2] Building C object CMakeFiles/cmTC_7b7ba.dir/CheckFunctionExists.c.o
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_efce1"
+[1/2] Building C object CMakeFiles/cmTC_efce1.dir/CheckFunctionExists.c.o
 C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'snprintf' [-Wincompatible-library-redeclaration]
   CHECK_FUNCTION_EXISTS(void);
   ^
@@ -687,159 +687,159 @@ C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/c
 #define CHECK_FUNCTION_EXISTS snprintf
                               ^
 1 warning generated.
-[2/2] Linking C executable cmTC_7b7ba
+[2/2] Linking C executable cmTC_efce1
 
 
 Determining if the function atoll exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_08968"
-[1/2] Building C object CMakeFiles/cmTC_08968.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_08968
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_7c96a"
+[1/2] Building C object CMakeFiles/cmTC_7c96a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7c96a
 
 
 Determining if the include file dlfcn.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_dbea4"
-[1/2] Building C object CMakeFiles/cmTC_dbea4.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_dbea4
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_14ac6"
+[1/2] Building C object CMakeFiles/cmTC_14ac6.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_14ac6
 
 
 Determining if the include file fcntl.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_7f38b"
-[1/2] Building C object CMakeFiles/cmTC_7f38b.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_7f38b
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_67013"
+[1/2] Building C object CMakeFiles/cmTC_67013.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_67013
 
 
 Determining if the include file memory.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_27827"
-[1/2] Building C object CMakeFiles/cmTC_27827.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_27827
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_409d7"
+[1/2] Building C object CMakeFiles/cmTC_409d7.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_409d7
 
 
 Determining if the include file netinet/in.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_794b2"
-[1/2] Building C object CMakeFiles/cmTC_794b2.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_794b2
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c62a9"
+[1/2] Building C object CMakeFiles/cmTC_c62a9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_c62a9
 
 
 Determining if the include file stdint.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_b31f6"
-[1/2] Building C object CMakeFiles/cmTC_b31f6.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_b31f6
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_12134"
+[1/2] Building C object CMakeFiles/cmTC_12134.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_12134
 
 
 Determining if the include file stdlib.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_eaeb2"
-[1/2] Building C object CMakeFiles/cmTC_eaeb2.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_eaeb2
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_7f670"
+[1/2] Building C object CMakeFiles/cmTC_7f670.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_7f670
 
 
 Determining if the include file strings.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_f8c7c"
-[1/2] Building C object CMakeFiles/cmTC_f8c7c.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_f8c7c
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_05e9f"
+[1/2] Building C object CMakeFiles/cmTC_05e9f.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_05e9f
 
 
 Determining if the include file string.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_8bb03"
-[1/2] Building C object CMakeFiles/cmTC_8bb03.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_8bb03
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a62cf"
+[1/2] Building C object CMakeFiles/cmTC_a62cf.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a62cf
 
 
 Determining if the include file sys/prctl.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c36fa"
-[1/2] Building C object CMakeFiles/cmTC_c36fa.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_c36fa
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_bdb88"
+[1/2] Building C object CMakeFiles/cmTC_bdb88.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_bdb88
 
 
 Determining if the include file sys/socket.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_fb587"
-[1/2] Building C object CMakeFiles/cmTC_fb587.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_fb587
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ff197"
+[1/2] Building C object CMakeFiles/cmTC_ff197.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_ff197
 
 
 Determining if the include file sys/stat.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ede50"
-[1/2] Building C object CMakeFiles/cmTC_ede50.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_ede50
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_f8cb6"
+[1/2] Building C object CMakeFiles/cmTC_f8cb6.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_f8cb6
 
 
 Determining if the include file sys/types.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_8fe10"
-[1/2] Building C object CMakeFiles/cmTC_8fe10.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_8fe10
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_42350"
+[1/2] Building C object CMakeFiles/cmTC_42350.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_42350
 
 
 Determining if the include file unistd.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a00cc"
-[1/2] Building C object CMakeFiles/cmTC_a00cc.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_a00cc
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_d31bc"
+[1/2] Building C object CMakeFiles/cmTC_d31bc.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_d31bc
 
 
 Determining if the include file sys/capability.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_8ca6b"
-[1/2] Building C object CMakeFiles/cmTC_8ca6b.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_8ca6b
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_3fd64"
+[1/2] Building C object CMakeFiles/cmTC_3fd64.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_3fd64
 
 
 Determining if the include file malloc.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_e0a63"
-[1/2] Building C object CMakeFiles/cmTC_e0a63.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_e0a63
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_79aaa"
+[1/2] Building C object CMakeFiles/cmTC_79aaa.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_79aaa
 
 
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_80066"
-[1/2] Building C object CMakeFiles/cmTC_80066.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_80066
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_91dab"
+[1/2] Building C object CMakeFiles/cmTC_91dab.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_91dab
 
 
 Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_6ab9d"
-[1/2] Building C object CMakeFiles/cmTC_6ab9d.dir/CheckIncludeFiles.c.o
-[2/2] Linking C executable cmTC_6ab9d
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_e8d57"
+[1/2] Building C object CMakeFiles/cmTC_e8d57.dir/CheckIncludeFiles.c.o
+[2/2] Linking C executable cmTC_e8d57
 
 
 Performing C SOURCE FILE Test LWS_HAS_INTPTR_T succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_83233"
-[1/2] Building C object CMakeFiles/cmTC_83233.dir/src.c.o
-[2/2] Linking C executable cmTC_83233
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_6e333"
+[1/2] Building C object CMakeFiles/cmTC_6e333.dir/src.c.o
+[2/2] Linking C executable cmTC_6e333
 
 Source file was:
 #include <stdint.h> 
@@ -850,9 +850,9 @@ Source file was:
 Performing C SOURCE FILE Test LWS_HAS_PTHREAD_SETNAME_NP succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_cba01"
-[1/2] Building C object CMakeFiles/cmTC_cba01.dir/src.c.o
-[2/2] Linking C executable cmTC_cba01
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_1b63a"
+[1/2] Building C object CMakeFiles/cmTC_1b63a.dir/src.c.o
+[2/2] Linking C executable cmTC_1b63a
 
 Source file was:
 #define _GNU_SOURCE 
@@ -865,92 +865,92 @@ Source file was:
 Performing C SOURCE FILE Test LWS_HAVE_VISIBILITY succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_1d7ac"
-[1/2] Building C object CMakeFiles/cmTC_1d7ac.dir/src.c.o
-[2/2] Linking C executable cmTC_1d7ac
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_69c46"
+[1/2] Building C object CMakeFiles/cmTC_69c46.dir/src.c.o
+[2/2] Linking C executable cmTC_69c46
 
 Source file was:
 int main(void) { return 0; }
 Performing C SOURCE FILE Test LWS_GCC_HAS_IGNORED_QUALIFIERS succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_3ef42"
-[1/2] Building C object CMakeFiles/cmTC_3ef42.dir/src.c.o
-[2/2] Linking C executable cmTC_3ef42
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a9dad"
+[1/2] Building C object CMakeFiles/cmTC_a9dad.dir/src.c.o
+[2/2] Linking C executable cmTC_a9dad
 
 Source file was:
 int main(void) { return 0; }
 Performing C SOURCE FILE Test LWS_GCC_HAS_TYPE_LIMITS succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_0c50b"
-[1/2] Building C object CMakeFiles/cmTC_0c50b.dir/src.c.o
-[2/2] Linking C executable cmTC_0c50b
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_b551e"
+[1/2] Building C object CMakeFiles/cmTC_b551e.dir/src.c.o
+[2/2] Linking C executable cmTC_b551e
 
 Source file was:
 int main(void) { return 0; }
 Determining if the include file openssl/ecdh.h exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a448d"
-[1/2] Building C object CMakeFiles/cmTC_a448d.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_a448d
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_5703c"
+[1/2] Building C object CMakeFiles/cmTC_5703c.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_5703c
 
 
 Determining if the function SSL_CTX_set1_param exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_5ca1a"
-[1/2] Building C object CMakeFiles/cmTC_5ca1a.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_5ca1a
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_3b628"
+[1/2] Building C object CMakeFiles/cmTC_3b628.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_3b628
 
 
 Determining if the function SSL_set_info_callback exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_112d1"
-[1/2] Building C object CMakeFiles/cmTC_112d1.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_112d1
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_005b7"
+[1/2] Building C object CMakeFiles/cmTC_005b7.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_005b7
 
 
 Determining if the function X509_VERIFY_PARAM_set1_host exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_4dc3c"
-[1/2] Building C object CMakeFiles/cmTC_4dc3c.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_4dc3c
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_536a9"
+[1/2] Building C object CMakeFiles/cmTC_536a9.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_536a9
 
 
 Determining if the function SSL_CTX_get0_certificate exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_083a5"
-[1/2] Building C object CMakeFiles/cmTC_083a5.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_083a5
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_e3cce"
+[1/2] Building C object CMakeFiles/cmTC_e3cce.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e3cce
 
 
 Determining if the function SSL_get0_alpn_selected exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_6e0c6"
-[1/2] Building C object CMakeFiles/cmTC_6e0c6.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_6e0c6
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_f4f97"
+[1/2] Building C object CMakeFiles/cmTC_f4f97.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f4f97
 
 
 Determining if the function SSL_set_alpn_protos exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_0aef5"
-[1/2] Building C object CMakeFiles/cmTC_0aef5.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_0aef5
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_f02c0"
+[1/2] Building C object CMakeFiles/cmTC_f02c0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f02c0
 
 
 Determining if the SSL_CTX_get_extra_chain_certs_only exist passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c303c"
-[1/2] Building C object CMakeFiles/cmTC_c303c.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_c303c
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_635d2"
+[1/2] Building C object CMakeFiles/cmTC_635d2.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_635d2
 
 File C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -970,17 +970,17 @@ int main(int argc, char** argv)
 Determining if the function TLSv1_2_client_method exists passed with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_b4326"
-[1/2] Building C object CMakeFiles/cmTC_b4326.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_b4326
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_4e95d"
+[1/2] Building C object CMakeFiles/cmTC_4e95d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4e95d
 
 
 Performing C SOURCE FILE Test LWS_HAVE_PIPE2 succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_6348f"
-[1/2] Building C object CMakeFiles/cmTC_6348f.dir/src.c.o
-[2/2] Linking C executable cmTC_6348f
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_96e96"
+[1/2] Building C object CMakeFiles/cmTC_96e96.dir/src.c.o
+[2/2] Linking C executable cmTC_96e96
 
 Source file was:
 #define _GNU_SOURCE
@@ -992,9 +992,9 @@ int main(void) {int fd[2];
 Performing C SOURCE FILE Test LWS_HAVE_TCP_USER_TIMEOUT succeeded with the following output:
 Change Dir: C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_17fed"
-[1/2] Building C object CMakeFiles/cmTC_17fed.dir/src.c.o
-[2/2] Linking C executable cmTC_17fed
+Run Build Command:"C:\Users\ashton.SKYSECURE\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_5beea"
+[1/2] Building C object CMakeFiles/cmTC_5beea.dir/src.c.o
+[2/2] Linking C executable cmTC_5beea
 
 Source file was:
 #include <netinet/tcp.h>

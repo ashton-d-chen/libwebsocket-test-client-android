@@ -545,7 +545,7 @@ libwebsockets_SOURCE_DIR:STATIC=C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEam
 log-lib:FILEPATH=C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/16/liblog.so
 
 //Dependencies for the target
-native-lib_LIB_DEPENDS:STATIC=general;C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/16/liblog.so;
+native-lib_LIB_DEPENDS:STATIC=general;websockets;general;C:/Users/ashton.SKYSECURE/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/16/liblog.so;
 
 //Dependencies for the target
 websockets_LIB_DEPENDS:STATIC=general;C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libssl.a;general;C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/lib/openssl/x86/lib/libcrypto.a;general;m;
