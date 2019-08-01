@@ -1,6 +1,0 @@
-[1/2] Building C object CMakeFiles/native-lib.dir/native-lib.c.o
-../../../../native-lib.c:342:38: warning: incompatible pointer types passing 'char (*)[5]' to parameter of type 'const char *' [-Wincompatible-pointer-types]
-    return (*env)->NewStringUTF(env, &done);
-                                     ^~~~~
-1 warning generated.
-[2/2] Linking C shared library C:\Users\ashton.SKYSECURE\Projects\AndroidNDKEample\app\build\intermediates\cmake\debug\obj\x86\libnative-lib.so

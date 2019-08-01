@@ -21,323 +21,287 @@
  * ringbuffer is sent to the broker, which distributes the events to all
  * connected clients.
  */
+#include <android/log.h>
+#define printf(...) __android_log_print(ANDROID_LOG_VERBOSE, "LwsService", ##__VA_ARGS__)
 
-#include <libwebsockets.h>
-#include <string.h>
-#include <signal.h>
-#include <pthread.h>
+/////////////////////////////////////////////////////////
+// Code executed when loading the dynamic link library //
+/////////////////////////////////////////////////////////
 
-static int interrupted;
+// The Java class the native functions shall be part of
+#define JNIREG_CLASS "com/example/androidndkeample/LwsService"
 
-/* one of these created for each message */
+JavaVM* gJvm = NULL;
+JNIEnv* gEnv = 0;
 
-struct msg {
-    void *payload; /* is malloc'd */
-    size_t len;
+JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_initLws(JNIEnv *env, jobject obj);
+JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_exitLws(JNIEnv *env, jobject obj);
+JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_serviceLws(JNIEnv *env, jobject obj);
+JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_setConnectionParameters(JNIEnv *env, jobject obj, jstring serverAddress, jint serverPort);
+JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_connectLws(JNIEnv *env, jobject obj);
+
+static JNINativeMethod gMethods[] = {
+        { "initLws", "()Z", (void*)Java_com_example_androidndkeample_LwsService_initLws },
+        { "exitLws", "()V", (void*)Java_com_example_androidndkeample_LwsService_exitLws },
+        { "serviceLws", "()V", (void*)Java_com_example_androidndkeample_LwsService_serviceLws },
+        { "setConnectionParameters", "(Ljava/lang/String;I)V", (void*)Java_com_example_androidndkeample_LwsService_setConnectionParameters },
+        { "connectLws", "()Z", (void*)Java_com_example_androidndkeample_LwsService_connectLws },
 };
 
-struct per_vhost_data__minimal {
-    struct lws_context *context;
-    struct lws_vhost *vhost;
-    const struct lws_protocols *protocol;
-    pthread_t pthread_spam[2];
+static int registerNativeMethods(JNIEnv* env, const char* className, JNINativeMethod* gMethods, int numMethods)
+{
+    jclass cls;
+    cls = (*env)->FindClass(env, className);
+    if(cls == NULL) {
+        return JNI_FALSE;
+    }
+    if ((*env)->RegisterNatives(env, cls, gMethods, numMethods) < 0) {
+        return JNI_FALSE;
+    }
 
-    pthread_mutex_t lock_ring; /* serialize access to the ring buffer */
-    struct lws_ring *ring; /* ringbuffer holding unsent messages */
-    uint32_t tail;
+    return JNI_TRUE;
+}
 
-    struct lws_client_connect_info i;
-    struct lws *client_wsi;
+static int registerNatives(JNIEnv* env)
+{
+    if(!registerNativeMethods(env, JNIREG_CLASS, gMethods, sizeof(gMethods) / sizeof(gMethods[0]))) {
+        return JNI_FALSE;
+    }
+    return JNI_TRUE;
+}
 
-    int counter;
-    char finished;
-    char established;
+JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* vm, void * reserved) {
+    jint result = -1;
+
+    gJvm = vm;
+    if((*vm)->GetEnv(vm, (void**)&gEnv, JNI_VERSION_1_6) != JNI_OK) goto bail;
+    if((*vm)->AttachCurrentThread(vm, &gEnv, NULL) < 0) goto bail;
+    if(registerNatives(gEnv) != JNI_TRUE) goto bail;
+
+    result = JNI_VERSION_1_6;
+
+    bail:
+    return result;
+}
+
+JNIEXPORT void JNICALL JNI_OnUnload(JavaVM *vm, void *reserved) {
+    gJvm = NULL;
+}
+
+////////////////////////////////////////////////////
+// JNI functions to export:                       //
+////////////////////////////////////////////////////
+
+static jclass gLwsServiceCls;
+static jobject gLwsServiceObj;
+static jmethodID sendMessageId;
+
+static const int MSG_DUMB_INCREMENT_PROTOCOL_COUNTER = 1;
+static const int MSG_LWS_CALLBACK_CLIENT_CONNECTION_ERROR = 2;
+static const int MSG_LWS_CALLBACK_CLIENT_ESTABLISHED = 3;
+
+#define BUFFER_SIZE 4096
+
+static struct lws_context *context = NULL;
+static struct lws_context_creation_info info;
+static struct lws *wsi = NULL;
+
+// prevents sending messages after jni_exitLws had been called
+static int isExit = 0;
+
+enum websocket_protocols {
+    PROTOCOL_DUMB_INCREMENT = 0,
+    PROTOCOL_COUNT
 };
 
-static void
-__minimal_destroy_message(void *_msg)
-{
-    struct msg *msg = _msg;
+struct per_session_data {
+    ;// no data
+};
 
-    free(msg->payload);
-    msg->payload = NULL;
-    msg->len = 0;
+static int callback( struct lws *wsi, enum lws_callback_reasons reason, void *user, void *in, size_t len );
+
+static struct lws_protocols protocols[] = {
+        {
+                "dumb-increment-protocol",
+                callback,
+                      sizeof( struct per_session_data ),
+                BUFFER_SIZE,
+        },
+        { NULL, NULL, 0, 0 } // end of list
+};
+
+static const struct lws_extension exts[] = {
+        {
+                "deflate-frame",
+                lws_extension_callback_pm_deflate,
+                "deflate_frame"
+        },
+        { NULL, NULL, NULL }
+};
+
+static int port = 0;
+static int use_ssl = 0;
+static int use_ssl_client = 0;
+static char address[8192];
+
+static char ca_cert[8192];
+static char client_cert[8192];
+static char client_cert_key[8192];
+
+static int deny_deflate = 0;
+static int deny_mux = 0;
+
+// Logging function for libwebsockets
+static void emit_log(int level, const char *msg)
+{
+    printf("%s", msg);
 }
 
-static void *
-thread_spam(void *d)
+
+JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_initLws(JNIEnv *env, jobject obj)
 {
-    struct per_vhost_data__minimal *vhd =
-            (struct per_vhost_data__minimal *)d;
-    struct msg amsg;
-    int len = 128, index = 1, n;
+    if(context) return JNI_TRUE;
 
-    do {
-        /* don't generate output if client not connected */
-        if (!vhd->established)
-            goto wait;
+    // Attach the java virtual machine to this thread
+    (*gJvm)->AttachCurrentThread(gJvm, &gEnv, NULL);
 
-        pthread_mutex_lock(&vhd->lock_ring); /* --------- ring lock { */
+    // Set java global references to the class and object
+    jclass cls = (*env)->GetObjectClass(env, obj);
+    gLwsServiceCls = (jclass) (*env)->NewGlobalRef(env, cls);
+    gLwsServiceObj = (*env)->NewGlobalRef(env, obj);
 
-        /* only create if space in ringbuffer */
-        n = (int)lws_ring_get_count_free_elements(vhd->ring);
-        if (!n) {
-            lwsl_user("dropping!\n");
-            goto wait_unlock;
-        }
+    // Get the sendMessage method from the LwsService class (inherited from class ThreadService)
+    sendMessageId = (*gEnv)->GetMethodID(gEnv, gLwsServiceCls, "sendMessage", "(ILjava/lang/Object;)V");
 
-        amsg.payload = malloc(LWS_PRE + len);
-        if (!amsg.payload) {
-            lwsl_user("OOM: dropping\n");
-            goto wait_unlock;
-        }
-        n = lws_snprintf((char *)amsg.payload + LWS_PRE, len,
-                         "tid: %p, msg: %d",
-                         (void *)pthread_self(), index++);
-        amsg.len = n;
-        n = lws_ring_insert(vhd->ring, &amsg, 1);
-        if (n != 1) {
-            __minimal_destroy_message(&amsg);
-            lwsl_user("dropping!\n");
-        } else
-            /*
-             * This will cause a LWS_CALLBACK_EVENT_WAIT_CANCELLED
-             * in the lws service thread context.
-             */
-            lws_cancel_service(vhd->context);
+    memset(&info, 0, sizeof(info));
+    info.port = CONTEXT_PORT_NO_LISTEN;
+    info.protocols = protocols;
+#if !defined(LWS_WITHOUT_EXTENSIONS)
+    info.extensions = exts;
+#endif
+    info.gid = -1;
+    info.uid = -1;
 
-        wait_unlock:
-        pthread_mutex_unlock(&vhd->lock_ring); /* } ring lock ------- */
+    lws_set_log_level( LLL_NOTICE | LLL_INFO | LLL_ERR | LLL_WARN | LLL_CLIENT, emit_log );
 
-        wait:
-        usleep(100000);
+    context = lws_create_context(&info);
+    if( context == NULL ){
+        emit_log(LLL_ERR, "Creating libwebsocket context failed");
+        return JNI_FALSE;
+    }
 
-    } while (!vhd->finished);
+    isExit = 0;
 
-    lwsl_notice("thread_spam %p exiting\n", (void *)pthread_self());
-
-    pthread_exit(NULL);
+    return JNI_TRUE;
 }
 
-static int
-connect_client(struct per_vhost_data__minimal *vhd)
+// Send a message to the client of the service
+// (must call jni_initLws() first)
+static inline void sendMessage(int id, jobject obj)
 {
-    vhd->i.context = vhd->context;
-    vhd->i.port = 7681;
-    vhd->i.address = "localhost";
-    vhd->i.path = "/publisher";
-    vhd->i.host = vhd->i.address;
-    vhd->i.origin = vhd->i.address;
-    vhd->i.ssl_connection = 0;
-
-    vhd->i.protocol = "lws-minimal-broker";
-    vhd->i.pwsi = &vhd->client_wsi;
-
-    return !lws_client_connect_via_info(&vhd->i);
+    if(!isExit) (*gEnv)->CallVoidMethod(gEnv, gLwsServiceObj, sendMessageId, id, obj);
 }
 
-static int
-callback_minimal_broker(struct lws *wsi, enum lws_callback_reasons reason,
-                        void *user, void *in, size_t len)
+JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_exitLws(JNIEnv *env, jobject obj)
 {
-    struct per_vhost_data__minimal *vhd =
-            (struct per_vhost_data__minimal *)
-                    lws_protocol_vh_priv_get(lws_get_vhost(wsi),
-                                             lws_get_protocol(wsi));
-    const struct msg *pmsg;
-    void *retval;
-    int n, m, r = 0;
+    if(context){
+        isExit = 1;
+        lws_context_destroy(context);
+        context = NULL;
+        (*env)->DeleteGlobalRef(env, gLwsServiceObj);
+        (*env)->DeleteGlobalRef(env, gLwsServiceCls);
+    }
+}
 
-    switch (reason) {
-
-        /* --- protocol lifecycle callbacks --- */
-
-        case LWS_CALLBACK_PROTOCOL_INIT:
-            vhd = lws_protocol_vh_priv_zalloc(lws_get_vhost(wsi),
-                                              lws_get_protocol(wsi),
-                                              sizeof(struct per_vhost_data__minimal));
-            vhd->context = lws_get_context(wsi);
-            vhd->protocol = lws_get_protocol(wsi);
-            vhd->vhost = lws_get_vhost(wsi);
-
-            vhd->ring = lws_ring_create(sizeof(struct msg), 8,
-                                        __minimal_destroy_message);
-            if (!vhd->ring)
-                return 1;
-
-            pthread_mutex_init(&vhd->lock_ring, NULL);
-
-            /* start the content-creating threads */
-
-            for (n = 0; n < (int)LWS_ARRAY_SIZE(vhd->pthread_spam); n++)
-                if (pthread_create(&vhd->pthread_spam[n], NULL,
-                                   thread_spam, vhd)) {
-                    lwsl_err("thread creation failed\n");
-                    r = 1;
-                    goto init_fail;
-                }
-
-            if (connect_client(vhd))
-                lws_timed_callback_vh_protocol(vhd->vhost,
-                                               vhd->protocol, LWS_CALLBACK_USER, 1);
-            break;
-
-        case LWS_CALLBACK_PROTOCOL_DESTROY:
-        init_fail:
-            vhd->finished = 1;
-            for (n = 0; n < (int)LWS_ARRAY_SIZE(vhd->pthread_spam); n++)
-                if (vhd->pthread_spam[n])
-                    pthread_join(vhd->pthread_spam[n], &retval);
-
-            if (vhd->ring)
-                lws_ring_destroy(vhd->ring);
-
-            pthread_mutex_destroy(&vhd->lock_ring);
-
-            return r;
+static int callback(
+        struct lws *wsi,
+        enum lws_callback_reasons reason,
+        void *user,
+        void *in,
+        size_t len
+)
+{
+    switch(reason){
 
         case LWS_CALLBACK_CLIENT_CONNECTION_ERROR:
-            lwsl_err("CLIENT_CONNECTION_ERROR: %s\n",
-                     in ? (char *)in : "(null)");
-            vhd->client_wsi = NULL;
-            lws_timed_callback_vh_protocol(vhd->vhost,
-                                           vhd->protocol, LWS_CALLBACK_USER, 1);
+            sendMessage(MSG_LWS_CALLBACK_CLIENT_CONNECTION_ERROR, NULL);
             break;
-
-            /* --- client callbacks --- */
 
         case LWS_CALLBACK_CLIENT_ESTABLISHED:
-            lwsl_user("%s: established\n", __func__);
-            vhd->established = 1;
+            sendMessage(MSG_LWS_CALLBACK_CLIENT_ESTABLISHED, NULL);
             break;
 
-        case LWS_CALLBACK_CLIENT_WRITEABLE:
-            pthread_mutex_lock(&vhd->lock_ring); /* --------- ring lock { */
-            pmsg = lws_ring_get_element(vhd->ring, &vhd->tail);
-            if (!pmsg)
-                goto skip;
+        case LWS_CALLBACK_CLIENT_RECEIVE:
+            ((char *)in)[len] = '\0';
+            sendMessage(MSG_DUMB_INCREMENT_PROTOCOL_COUNTER, (*gEnv)->NewStringUTF(gEnv, (const char*)in));
+            break;
 
-            /* notice we allowed for LWS_PRE in the payload already */
-            m = lws_write(wsi, ((unsigned char *)pmsg->payload) + LWS_PRE,
-                          pmsg->len, LWS_WRITE_TEXT);
-            if (m < (int)pmsg->len) {
-                pthread_mutex_unlock(&vhd->lock_ring); /* } ring lock */
-                lwsl_err("ERROR %d writing to ws socket\n", m);
-                return -1;
+        case LWS_CALLBACK_CLIENT_CONFIRM_EXTENSION_SUPPORTED:
+            if ((strcmp((const char*)in, "deflate-stream") == 0) && deny_deflate) {
+                emit_log(LLL_ERR, "websocket: denied deflate-stream extension");
+                return 1;
             }
-
-            lws_ring_consume_single_tail(vhd->ring, &vhd->tail, 1);
-
-            /* more to do for us? */
-            if (lws_ring_get_element(vhd->ring, &vhd->tail))
-                /* come back as soon as we can write more */
-                lws_callback_on_writable(wsi);
-
-        skip:
-            pthread_mutex_unlock(&vhd->lock_ring); /* } ring lock ------- */
-            break;
-
-        case LWS_CALLBACK_CLIENT_CLOSED:
-            vhd->client_wsi = NULL;
-            vhd->established = 0;
-            lws_timed_callback_vh_protocol(vhd->vhost, vhd->protocol,
-                                           LWS_CALLBACK_USER, 1);
-            break;
-
-        case LWS_CALLBACK_EVENT_WAIT_CANCELLED:
-            /*
-             * When the "spam" threads add a message to the ringbuffer,
-             * they create this event in the lws service thread context
-             * using lws_cancel_service().
-             *
-             * We respond by scheduling a writable callback for the
-             * connected client, if any.
-             */
-            if (vhd && vhd->client_wsi && vhd->established)
-                lws_callback_on_writable(vhd->client_wsi);
-            break;
-
-            /* rate-limited client connect retries */
-
-        case LWS_CALLBACK_USER:
-            lwsl_notice("%s: LWS_CALLBACK_USER\n", __func__);
-            if (connect_client(vhd))
-                lws_timed_callback_vh_protocol(vhd->vhost,
-                                               vhd->protocol,
-                                               LWS_CALLBACK_USER, 1);
+            if ((strcmp((const char*)in, "deflate-frame") == 0) && deny_deflate) {
+                emit_log(LLL_ERR, "websocket: denied deflate-frame extension");
+                return 1;
+            }
+            if ((strcmp((const char*)in, "x-google-mux") == 0) && deny_mux) {
+                emit_log(LLL_ERR, "websocket: denied x-google-mux extension");
+                return 1;
+            }
             break;
 
         default:
             break;
     }
 
-    return lws_callback_http_dummy(wsi, reason, user, in, len);
+    return 0;
 }
 
-static const struct lws_protocols protocols[] = {
-        {
-                "lws-minimal-broker",
-                callback_minimal_broker,
-                      0,
-                         0,
-        },
-        { NULL, NULL, 0, 0 }
-};
-
-static void
-sigint_handler(int sig)
+JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_serviceLws(JNIEnv *env, jobject obj)
 {
-    interrupted = 1;
+    if(context){
+        lws_service( context, 0 );
+    }
 }
 
-int main(int argc, const char **argv)
+JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_setConnectionParameters(
+        JNIEnv *env,
+        jobject obj,
+        jstring serverAddress,
+        jint serverPort
+)
 {
-
+    address[0] = 0;
+    port = serverPort;
+    use_ssl = 0;
+    use_ssl_client = 0;
+    snprintf(address, sizeof(address), "%s", (*env)->GetStringUTFChars(env, serverAddress, 0));
 }
 
+JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_connectLws(JNIEnv *env, jobject obj)
+{
+    struct lws_client_connect_info info_ws;
+    memset(&info_ws, 0, sizeof(info_ws));
 
-JNIEXPORT jstring JNICALL
-Java_com_example_androidndkeample_MainActivity_stringFromJNI(JNIEnv *env, jobject obj) {
-//    std::string hello = "Hello from C++";
-//    return env->NewStringUTF(hello.c_str());
+    info_ws.port = port;
+    info_ws.address = address;
+    info_ws.path = "/";
+    info_ws.context = context;
+    info_ws.ssl_connection = use_ssl;
+    info_ws.host = address;
+    info_ws.origin = address;
+    info_ws.ietf_version_or_minus_one = -1;
+    info_ws.client_exts = exts;
+    info_ws.protocol = protocols[PROTOCOL_DUMB_INCREMENT].name;
 
-    struct lws_context_creation_info info;
-    struct lws_context *context;
-    const char *p;
-    int n = 0, logs = LLL_USER | LLL_ERR | LLL_WARN | LLL_NOTICE
-    /* for LLL_ verbosity above NOTICE to be built into lws,
-     * lws must have been configured and built with
-     * -DCMAKE_BUILD_TYPE=DEBUG instead of =RELEASE */
-    /* | LLL_INFO */ /* | LLL_PARSER */ /* | LLL_HEADER */
-    /* | LLL_EXT */ /* | LLL_CLIENT */ /* | LLL_LATENCY */
-    /* | LLL_DEBUG */;
-
-    signal(SIGINT, sigint_handler);
-
-//    if ((p = lws_cmdline_option(argc, argv, "-d")))
-//        logs = atoi(p);
-    logs = 1;
-
-    lws_set_log_level(logs, NULL);
-    lwsl_user("LWS minimal ws client tx\n");
-    lwsl_user("  Run minimal-ws-broker and browse to that\n");
-
-    memset(&info, 0, sizeof info); /* otherwise uninitialized garbage */
-    info.port = CONTEXT_PORT_NO_LISTEN; /* we do not run any server */
-    info.protocols = protocols;
-
-    context = lws_create_context(&info);
-    if (!context) {
-        lwsl_err("lws init failed\n");
-        return "failed";
+    // connect
+    wsi = lws_client_connect_via_info(&info_ws);
+    if(wsi == NULL ){
+        // Error
+        emit_log(LLL_ERR, "Protocol failed to connect.");
+        return JNI_FALSE;
     }
 
-
-    while (n >= 0 && !interrupted)
-        n = lws_service(context, 1000);
-
-    lws_context_destroy(context);
-    lwsl_user("Completed\n");
-    char done[5] = "DONE";
-    return (*env)->NewStringUTF(env, &done);
+    return JNI_TRUE;
 }

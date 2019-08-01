@@ -18,15 +18,11 @@
  * Public Domain.
  */
 
-package org.libwebsockets.client;
+package com.example.androidndkeample;
 
 import android.app.Service;
 import android.content.Intent;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.Message;
-import android.os.Messenger;
-import android.os.RemoteException;
+import android.os.*;
 import android.util.Log;
 
 import java.lang.ref.WeakReference;

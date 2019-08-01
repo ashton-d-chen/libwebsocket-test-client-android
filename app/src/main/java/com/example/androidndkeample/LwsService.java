@@ -18,10 +18,9 @@
  * Public Domain.
  */
 
-package org.libwebsockets.client;
+package com.example.androidndkeample;
 
 import android.os.Message;
-import android.os.RemoteException;
 import android.util.Log;
 
 public class LwsService extends ThreadService {
@@ -118,7 +117,7 @@ public class LwsService extends ThreadService {
     /** Load the native libwebsockets code */
     static {
         try {
-            System.loadLibrary("lwsservice");
+            System.loadLibrary("native-lib");
         }
         catch(UnsatisfiedLinkError ule) {
             Log.e("LwsService", "Warning: Could not load native library: " + ule.getMessage());
