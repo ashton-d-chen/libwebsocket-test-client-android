@@ -223,11 +223,11 @@ static int callback(
         size_t len
 )
 {
-    unsigned char msg[256] =  "{\"jsonrpc\":\"2.0\", \"id\":1,\"method\":\"server.version\",\"params\":[]}";
+    const char msg[256] =  "{\"jsonrpc\":\"2.0\", \"id\":1,\"method\":\"server.version\",\"params\":[]}";
 
     unsigned char buf[LWS_PRE + 256];
     memset(&buf[LWS_PRE], 0, 256);
-//    strncpy((char*)buf + LWS_PRE, msg, 256);
+    strncpy((char*)buf + LWS_PRE, msg, 256);
 
     switch(reason){
 
@@ -240,7 +240,7 @@ static int callback(
             break;
 
         case LWS_CALLBACK_CLIENT_WRITEABLE:
-            lws_write(wsi, msg, 256, LWS_WRITE_TEXT);
+            lws_write(wsi, buf, LWS_PRE + 256, LWS_WRITE_TEXT);
 
             break;
 
@@ -305,7 +305,7 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_connectL
     info_ws.host = "echo.websocket.org";
     info_ws.origin = "echo.websocket.org";
     info_ws.ietf_version_or_minus_one = -1;
-    info_ws.client_exts = exts;
+    info_ws.client_exts = NULL;
     info_ws.protocol = protocols[PROTOCOL_DUMB_INCREMENT].name;
 
     // connect
