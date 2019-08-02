@@ -99,6 +99,7 @@ static jmethodID sendMessageId;
 static const int MSG_DUMB_INCREMENT_PROTOCOL_COUNTER = 1;
 static const int MSG_LWS_CALLBACK_CLIENT_CONNECTION_ERROR = 2;
 static const int MSG_LWS_CALLBACK_CLIENT_ESTABLISHED = 3;
+static const int MSG_LWS_CALLBACK_CLIENT_RECEIVE = 4;
 
 #define BUFFER_SIZE 4096
 
@@ -210,6 +211,7 @@ JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_exitLws(JNIE
         context = NULL;
         (*env)->DeleteGlobalRef(env, gLwsServiceObj);
         (*env)->DeleteGlobalRef(env, gLwsServiceCls);
+//        (*env)->ReleaseStringUTFChars(env, javaString, nativeString);
     }
 }
 
@@ -221,6 +223,12 @@ static int callback(
         size_t len
 )
 {
+    unsigned char msg[256] =  "{\"jsonrpc\":\"2.0\", \"id\":1,\"method\":\"server.version\",\"params\":[]}";
+
+    unsigned char buf[LWS_PRE + 256];
+    memset(&buf[LWS_PRE], 0, 256);
+//    strncpy((char*)buf + LWS_PRE, msg, 256);
+
     switch(reason){
 
         case LWS_CALLBACK_CLIENT_CONNECTION_ERROR:
@@ -229,6 +237,11 @@ static int callback(
 
         case LWS_CALLBACK_CLIENT_ESTABLISHED:
             sendMessage(MSG_LWS_CALLBACK_CLIENT_ESTABLISHED, NULL);
+            break;
+
+        case LWS_CALLBACK_CLIENT_WRITEABLE:
+            lws_write(wsi, msg, 256, LWS_WRITE_TEXT);
+
             break;
 
         case LWS_CALLBACK_CLIENT_RECEIVE:
@@ -261,7 +274,7 @@ static int callback(
 JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_serviceLws(JNIEnv *env, jobject obj)
 {
     if(context){
-        lws_service( context, 0 );
+        lws_service( context, 1000 );
     }
 }
 
@@ -272,7 +285,7 @@ JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_setConnectio
         jint serverPort
 )
 {
-    address[0] = 0;
+//    address[0] = (*env)->GetStringUTFChars(env, serverAddress, 0);
     port = serverPort;
     use_ssl = 0;
     use_ssl_client = 0;
@@ -285,12 +298,12 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_connectL
     memset(&info_ws, 0, sizeof(info_ws));
 
     info_ws.port = port;
-    info_ws.address = address;
+    info_ws.address = "echo.websocket.org";
     info_ws.path = "/";
     info_ws.context = context;
     info_ws.ssl_connection = use_ssl;
-    info_ws.host = address;
-    info_ws.origin = address;
+    info_ws.host = "echo.websocket.org";
+    info_ws.origin = "echo.websocket.org";
     info_ws.ietf_version_or_minus_one = -1;
     info_ws.client_exts = exts;
     info_ws.protocol = protocols[PROTOCOL_DUMB_INCREMENT].name;

@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements LwsService.Output
         etPort = (EditText) findViewById(R.id.editText_portNumber);
 
         etServer.setText("echo.websocket.org");
+        etPort.setText("");
         // Create the Messenger for handling output from the service
         mMessenger = new Messenger(new LwsService.OutputHandler(this));
 
@@ -130,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements LwsService.Output
     public void handleOutputMessage(Message message) {
         switch(message.what) {
             case LwsService.MSG_DUMB_INCREMENT_PROTOCOL_COUNTER:
-            tvCounter.setText((String)message.obj);
+            tvCounter.setText(message.obj.toString());
             break;
             case LwsService.MSG_LWS_CALLBACK_CLIENT_CONNECTION_ERROR:
             connectErrorListener();
