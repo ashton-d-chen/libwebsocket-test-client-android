@@ -11,7 +11,7 @@ cloud serving.
 [50 minimal examples](https://libwebsockets.org/git/libwebsockets/tree/minimal-examples) for
 various scenarios, CC0-licensed (public domain) for cut-and-paste, allow you to get started quickly.
 
-![overview](doc-assets/lws-overview.svg)
+![overview](./doc-assets/lws-overview.svg)
 
 News
 ----
@@ -118,10 +118,10 @@ Current master is checked by Coverity at least daily and kept at zero issues.
 
 Current master passes all the tests and these new CI arrangements will help
 keep it that way.
-OPENSSL_INCLUDE_DIR
+
 ## Lws has the first official ws-over-h2 server support
 
-![wss-over-h2](doc-assets/wss2.png)
+![wss-over-h2](./doc-assets/wss2.png)
 
 There's a new [RFC](https://tools.ietf.org/html/rfc8441) that enables multiplexing ws connections
 over an http/2 link.  Compared to making individual tcp and tls connections for

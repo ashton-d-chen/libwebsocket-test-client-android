@@ -1,3 +1,0 @@
-C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_94f43.dir
-C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
-C:/Users/ashton.SKYSECURE/Projects/AndroidNDKEample/app/src/main/cpp/build/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir

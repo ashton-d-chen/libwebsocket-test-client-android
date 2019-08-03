@@ -968,7 +968,7 @@ just_kill_connection:
 
 	lwsi_set_state(wsi, LRS_DEAD_SOCKET);
 	lws_buflist_destroy_all_segments(&wsi->buflist);
-	lws_dll_lws_remove(&wsi->dll_buflist);
+	lws_dll2_remove(&wsi->dll_buflist);
 
 	if (wsi->role_ops->close_role)
 	    wsi->role_ops->close_role(pt, wsi);
@@ -984,7 +984,7 @@ just_kill_connection:
 		if (!wsi->protocol && wsi->vhost && wsi->vhost->protocols)
 			pro = &wsi->vhost->protocols[0];
 
-		if (!wsi->upgraded_to_http2 || !lwsi_role_client(wsi))
+		if (pro && (!wsi->upgraded_to_http2 || !lwsi_role_client(wsi))) {
 			/*
 			 * The network wsi for a client h2 connection shouldn't
 			 * call back for its role: the child stream connections
@@ -993,8 +993,9 @@ just_kill_connection:
 			 * the closing network stream.
 			 */
 			pro->callback(wsi,
-			      wsi->role_ops->close_cb[lwsi_role_server(wsi)],
-			      wsi->user_space, NULL, 0);
+				      wsi->role_ops->close_cb[lwsi_role_server(wsi)],
+				      wsi->user_space, NULL, 0);
+		}
 		wsi->told_user_closed = 1;
 	}
 
@@ -1073,7 +1074,11 @@ lws_buflist_append_segment(struct lws_buflist **head, const uint8_t *buf,
 
 	/* append at the tail */
 	while (*head) {
-		if (!--sanity || head == &((*head)->next)) {
+		if (!--sanity) {
+			lwsl_err("%s: buflist reached sanity limit\n", __func__);
+			return -1;
+		}
+		if (*head == (*head)->next) {
 			lwsl_err("%s: corrupt list points to self\n", __func__);
 			return -1;
 		}
@@ -1107,7 +1112,7 @@ lws_buflist_destroy_segment(struct lws_buflist **head)
 	struct lws_buflist *old = *head;
 
 	assert(*head);
-	*head = (*head)->next;
+	*head = old->next;
 	old->next = NULL;
 	lws_free(old);
 
@@ -1149,6 +1154,9 @@ lws_buflist_next_segment_len(struct lws_buflist **head, uint8_t **buf)
 		return 0;
 	}
 
+	if ((*head)->pos >= (*head)->len)
+		lws_buflist_describe(head, head);
+
 	assert((*head)->pos < (*head)->len);
 
 	if (buf)
@@ -1162,6 +1170,10 @@ lws_buflist_use_segment(struct lws_buflist **head, size_t len)
 {
 	assert(*head);
 	assert(len);
+
+	if ((*head)->pos + len > (*head)->len)
+		lws_buflist_describe(head, head);
+
 	assert((*head)->pos + len <= (*head)->len);
 
 	(*head)->pos += len;
@@ -2234,16 +2246,16 @@ lwsl_hexdump_level(int hexdump_level, const void *vbuf, size_t len)
 
 	for (n = 0; n < len;) {
 		unsigned int start = n, m;
-		char line[80], *p = line;
+		char line[80], *p = line, *end = p + sizeof(line) - 1;
 
-		p += sprintf(p, "%04X: ", start);
+		p += lws_snprintf(p, lws_ptr_diff(end, p), "%04X: ", start);
 
 		for (m = 0; m < 16 && n < len; m++)
-			p += sprintf(p, "%02X ", buf[n++]);
+			p += lws_snprintf(p, lws_ptr_diff(end, p), "%02X ", buf[n++]);
 		while (m++ < 16)
-			p += sprintf(p, "   ");
+			p += lws_snprintf(p, lws_ptr_diff(end, p), "   ");
 
-		p += sprintf(p, "   ");
+		p += lws_snprintf(p, lws_ptr_diff(end, p), "   ");
 
 		for (m = 0; m < 16 && (start + m) < len; m++) {
 			if (buf[start + m] >= ' ' && buf[start + m] < 127)

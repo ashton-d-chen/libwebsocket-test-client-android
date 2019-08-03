@@ -123,7 +123,7 @@ static int callback( struct lws *wsi, enum lws_callback_reasons reason, void *us
 
 static struct lws_protocols protocols[] = {
         {
-                "dumb-increment-protocol",
+                "",
                 callback,
                 0,
                 512,
@@ -322,7 +322,7 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_connectL
     memset(&info_ws, 0, sizeof(info_ws));
 
     info_ws.context = context;
-    info_ws.ssl_connection = use_ssl;
+    info_ws.ssl_connection = 0; //LCCSCF_USE_SSL | LCCSCF_ALLOW_SELFSIGNED | LCCSCF_SKIP_SERVER_CERT_HOSTNAME_CHECK;
     info_ws.port = port;
     info_ws.address = "echo.websocket.org";
     info_ws.path = "/";
