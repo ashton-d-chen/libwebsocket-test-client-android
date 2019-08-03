@@ -125,13 +125,18 @@ static struct lws_protocols protocols[] = {
         {
                 "dumb-increment-protocol",
                 callback,
-                      sizeof( struct per_session_data ),
-                BUFFER_SIZE,
+                0,
+                512,
         },
         { NULL, NULL, 0, 0 } // end of list
 };
 
 static const struct lws_extension exts[] = {
+        {
+                "permessage-deflate",
+                lws_extension_callback_pm_deflate,
+                "permessage-deflate; client_max_window_bits"
+        },
         {
                 "deflate-frame",
                 lws_extension_callback_pm_deflate,
@@ -175,6 +180,7 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_initLws(
     sendMessageId = (*gEnv)->GetMethodID(gEnv, gLwsServiceCls, "sendMessage", "(ILjava/lang/Object;)V");
 
     memset(&info, 0, sizeof(info));
+//    info.options = LWS_SERVER_OPTION_DO_SSL_GLOBAL_INIT;
     info.port = CONTEXT_PORT_NO_LISTEN;
     info.protocols = protocols;
 #if !defined(LWS_WITHOUT_EXTENSIONS)
@@ -182,8 +188,8 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_initLws(
 #endif
     info.gid = -1;
     info.uid = -1;
-
-    lws_set_log_level( LLL_NOTICE | LLL_INFO | LLL_ERR | LLL_WARN | LLL_CLIENT, emit_log );
+    info.extensions = exts;
+    lws_set_log_level( LLL_NOTICE | LLL_INFO | LLL_ERR | LLL_WARN | LLL_CLIENT | LLL_PARSER | LLL_HEADER | LLL_EXT | LLL_DEBUG, emit_log );
 
     context = lws_create_context(&info);
     if( context == NULL ){
@@ -230,6 +236,13 @@ static int callback(
     strncpy((char*)buf + LWS_PRE, msg, 256);
 
     switch(reason){
+        case LWS_CALLBACK_PROTOCOL_INIT:
+             lwsl_notice("LWS_CALLBACK_CLIENT_CLOSED\n");
+            break;
+
+        case LWS_CALLBACK_PROTOCOL_DESTROY:
+             lwsl_notice("LWS_CALLBACK_CLIENT_CLOSED\n");
+            break;
 
         case LWS_CALLBACK_CLIENT_CONNECTION_ERROR:
             sendMessage(MSG_LWS_CALLBACK_CLIENT_CONNECTION_ERROR, NULL);
@@ -237,11 +250,11 @@ static int callback(
 
         case LWS_CALLBACK_CLIENT_ESTABLISHED:
             sendMessage(MSG_LWS_CALLBACK_CLIENT_ESTABLISHED, NULL);
+            lws_callback_on_writable(wsi);
             break;
 
         case LWS_CALLBACK_CLIENT_WRITEABLE:
-            lws_write(wsi, buf, LWS_PRE + 256, LWS_WRITE_TEXT);
-
+            lws_write(wsi, buf + LWS_PRE, 256, LWS_WRITE_TEXT);
             break;
 
         case LWS_CALLBACK_CLIENT_RECEIVE:
@@ -262,6 +275,17 @@ static int callback(
                 emit_log(LLL_ERR, "websocket: denied x-google-mux extension");
                 return 1;
             }
+            break;
+        case LWS_CALLBACK_CLIENT_CLOSED:
+            lwsl_notice("LWS_CALLBACK_CLIENT_CLOSED\n");
+            break;
+
+        case LWS_CALLBACK_EVENT_WAIT_CANCELLED:
+            lwsl_notice("LWS_CALLBACK_EVENT_WAIT_CANCELLED\n");
+            break;
+
+        case LWS_CALLBACK_USER:
+            lwsl_notice("LWS_CALLBACK_USER\n");
             break;
 
         default:
@@ -297,19 +321,19 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_connectL
     struct lws_client_connect_info info_ws;
     memset(&info_ws, 0, sizeof(info_ws));
 
+    info_ws.context = context;
+    info_ws.ssl_connection = use_ssl;
     info_ws.port = port;
     info_ws.address = "echo.websocket.org";
     info_ws.path = "/";
-    info_ws.context = context;
-    info_ws.ssl_connection = use_ssl;
-    info_ws.host = "echo.websocket.org";
-    info_ws.origin = "echo.websocket.org";
+    info_ws.host = info_ws.address;
+    info_ws.origin = info_ws.address;
     info_ws.ietf_version_or_minus_one = -1;
-    info_ws.client_exts = NULL;
+//    info_ws.client_exts = exts;
     info_ws.protocol = protocols[PROTOCOL_DUMB_INCREMENT].name;
-
+    info_ws.pwsi = &wsi;
     // connect
-    wsi = lws_client_connect_via_info(&info_ws);
+    lws_client_connect_via_info(&info_ws);
     if(wsi == NULL ){
         // Error
         emit_log(LLL_ERR, "Protocol failed to connect.");

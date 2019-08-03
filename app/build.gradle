@@ -17,12 +17,8 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++11"
-                arguments "-DLWS_WITHOUT_DAEMONIZE=ON",
+                arguments "-DCMAKE_BUILD_TYPE=DEBUG",
                         "-DLWS_WITHOUT_TESTAPPS=ON",
-                        "-DLWS_IPV6=OFF",
-                        "-DLWS_WITH_BUNDLED_ZLIB=OFF",
-                        "-DLWS_WITH_SSL=ON",
-                        "-DLWS_WITH_HTTP2=ON",
                         "-DLWS_OPENSSL_INCLUDE_DIRS=app/src/main/cpp/lib/openssl/arm64-v8a/include",
                         "-DLWS_OPENSSL_LIBRARIES=app/src/main/cpp/lib/openssl/arm64-v8a/lib/libssl.a;app/src/main/cpp/lib/openssl/arm64-v8a/lib/libcrypto.a",
                         "-v"
