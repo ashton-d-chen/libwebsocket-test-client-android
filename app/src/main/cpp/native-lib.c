@@ -180,7 +180,7 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_initLws(
     sendMessageId = (*gEnv)->GetMethodID(gEnv, gLwsServiceCls, "sendMessage", "(ILjava/lang/Object;)V");
 
     memset(&info, 0, sizeof(info));
-//    info.options = LWS_SERVER_OPTION_DO_SSL_GLOBAL_INIT;
+    info.options = LWS_SERVER_OPTION_DO_SSL_GLOBAL_INIT;
     info.port = CONTEXT_PORT_NO_LISTEN;
     info.protocols = protocols;
 #if !defined(LWS_WITHOUT_EXTENSIONS)
@@ -321,7 +321,7 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_connectL
     memset(&info_ws, 0, sizeof(info_ws));
 
     info_ws.context = context;
-    info_ws.ssl_connection = 0; //LCCSCF_USE_SSL | LCCSCF_ALLOW_SELFSIGNED | LCCSCF_SKIP_SERVER_CERT_HOSTNAME_CHECK;
+    info_ws.ssl_connection = LCCSCF_USE_SSL | LCCSCF_ALLOW_SELFSIGNED | LCCSCF_SKIP_SERVER_CERT_HOSTNAME_CHECK;
     info_ws.port = port;
     info_ws.address = address;
     info_ws.path = "/";

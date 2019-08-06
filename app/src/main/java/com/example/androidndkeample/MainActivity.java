@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements LwsService.Output
         etPort = (EditText) findViewById(R.id.editText_portNumber);
 
         etServer.setText("10.1.2.208");
-        etPort.setText("50003");
+        etPort.setText("50004");
         // Create the Messenger for handling output from the service
         mMessenger = new Messenger(new LwsService.OutputHandler(this));
 
