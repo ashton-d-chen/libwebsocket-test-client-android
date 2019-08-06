@@ -229,11 +229,11 @@ static int callback(
         size_t len
 )
 {
-    const char msg[256] =  "{\"jsonrpc\":\"2.0\", \"id\":1,\"method\":\"server.version\",\"params\":[]}";
-
-    unsigned char buf[LWS_PRE + 256];
-    memset(&buf[LWS_PRE], 0, 256);
-    strncpy((char*)buf + LWS_PRE, msg, 256);
+    const char msg[] =  "{\"method\":\"server.version\",\"params\":[],\"id\":1}";
+    const size_t msg_len = strlen(msg);
+    unsigned char buf[LWS_PRE + msg_len];
+    memset(&buf[LWS_PRE], 0, msg_len);
+    strncpy((char*)buf + LWS_PRE, msg, msg_len);
 
     switch(reason){
         case LWS_CALLBACK_PROTOCOL_INIT:
@@ -254,7 +254,7 @@ static int callback(
             break;
 
         case LWS_CALLBACK_CLIENT_WRITEABLE:
-            lws_write(wsi, buf + LWS_PRE, 256, LWS_WRITE_TEXT);
+            lws_write(wsi, buf + LWS_PRE, msg_len, LWS_WRITE_TEXT);
             break;
 
         case LWS_CALLBACK_CLIENT_RECEIVE:
@@ -309,7 +309,6 @@ JNIEXPORT void JNICALL Java_com_example_androidndkeample_LwsService_setConnectio
         jint serverPort
 )
 {
-//    address[0] = (*env)->GetStringUTFChars(env, serverAddress, 0);
     port = serverPort;
     use_ssl = 0;
     use_ssl_client = 0;
@@ -324,7 +323,7 @@ JNIEXPORT jboolean JNICALL Java_com_example_androidndkeample_LwsService_connectL
     info_ws.context = context;
     info_ws.ssl_connection = 0; //LCCSCF_USE_SSL | LCCSCF_ALLOW_SELFSIGNED | LCCSCF_SKIP_SERVER_CERT_HOSTNAME_CHECK;
     info_ws.port = port;
-    info_ws.address = "echo.websocket.org";
+    info_ws.address = address;
     info_ws.path = "/";
     info_ws.host = info_ws.address;
     info_ws.origin = info_ws.address;

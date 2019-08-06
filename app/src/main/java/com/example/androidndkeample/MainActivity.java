@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity implements LwsService.Output
         etServer = (EditText) findViewById(R.id.editText_serverLocation);
         etPort = (EditText) findViewById(R.id.editText_portNumber);
 
-        etServer.setText("echo.websocket.org");
-        etPort.setText("80");
+        etServer.setText("10.1.2.208");
+        etPort.setText("50003");
         // Create the Messenger for handling output from the service
         mMessenger = new Messenger(new LwsService.OutputHandler(this));
 
